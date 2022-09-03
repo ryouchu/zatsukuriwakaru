@@ -28,6 +28,10 @@ img {
   display: none;
 }
 
+.sp-only-b {
+  display: none;
+}
+
 /*--------------------------------
  レイアウト
 ---------------------------------*/
@@ -619,6 +623,10 @@ img {
 }
 
 @media screen and (max-width: 508px) {
+  .sp-only-b {
+    display: block;
+  }
+
   .mv {
     margin-top: 16vw;
   }
