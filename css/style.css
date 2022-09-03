@@ -151,7 +151,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 55vw;
   text-align: center;
   flex-direction: column;
   margin-top: 101.35px;
@@ -160,6 +159,7 @@ img {
 .mv-container {
   padding: 0 40px;
   height: 15vw;
+  max-height: 116px;
   display: flex;
   flex-direction: column;
   justify-content: center;
