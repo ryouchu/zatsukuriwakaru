@@ -172,14 +172,14 @@ img {
 .mv-bg-up {
   height: 20vw;
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 .mv-bg-down {
   height: 20vw;
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
@@ -515,12 +515,12 @@ img {
 
   .mv-bg-up {
     height: 26vw;
-    background-size: 130%;
+    background-size: cover;
   }
   
   .mv-bg-down {
     height: 26vw;
-    background-size: 130%;
+    background-size: cover;
   }
 
   .mv-container {
@@ -647,13 +647,13 @@ img {
   }
 
   .mv-bg-up {
-    height: 29.7vw;
-    background-size: 150%;
+    height: 30vw;
+    background-size: cover;
   }
   
   .mv-bg-down {
-    height: 29.7vw;
-    background-size: 150%;
+    height: 30vw;
+    background-size: cover;
   }
 }
 
