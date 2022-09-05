@@ -171,7 +171,6 @@ img {
 
 .mv-bg-up {
   height: 20vw;
-  /* max-height: 180px; */
   width: 100%;
   background-size: contain;
   background-position: center;
@@ -179,7 +178,6 @@ img {
 
 .mv-bg-down {
   height: 20vw;
-  /* max-height: 180px; */
   width: 100%;
   background-size: contain;
   background-position: center;
@@ -515,7 +513,15 @@ img {
     margin-top: 91.35px;
   }
 
-
+  .mv-bg-up {
+    height: 26vw;
+    background-size: 130%;
+  }
+  
+  .mv-bg-down {
+    height: 26vw;
+    background-size: 130%;
+  }
 
   .mv-container {
     padding: 0 20px;
@@ -628,7 +634,7 @@ img {
   }
 
   .mv {
-    margin-top: 16vw;
+    margin-top: 16.4vw;
   }
 
   .mv-title {
@@ -638,6 +644,16 @@ img {
   .mv-text {
     font-size: 12px;
     line-height: 1.5;
+  }
+
+  .mv-bg-up {
+    height: 29.7vw;
+    background-size: 150%;
+  }
+  
+  .mv-bg-down {
+    height: 29.7vw;
+    background-size: 150%;
   }
 }
 
