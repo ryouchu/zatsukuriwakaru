@@ -13,26 +13,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
   <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style_scss.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.ico" />
   <link rel=”canonical” href=”URLが入る” />
+  <script src="js/vhSet.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script> -->
+
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="loader_box" id="loader_box">
+    <div class="snippet" data-title=".dot-pulse">
+      <div class="stage">
+        <div class="dot-pulse"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper" id="wrapper">
 
     <!-- header -->
     <header class="header ">
       <div class="container">
         <div class="header-logo">
-          <img src="img/logo.png"  width="230px">
+          <a  href="#main"><img src="img/logo.svg"></a>
         </div>
         <nav class="gnav">
           <ul class="gnav-list">
-            <li class="gnav-item"><a href="#works">活動一覧</a></li>
+            <li class="gnav-item"><a href="#works">活動内容</a></li>
             <!-- <li class="gnav-item"><a href="#skill">SKILL</a></li> -->
-            <li class="gnav-item"><a href="#about">雑栗について</a></li>
+            <li class="gnav-item"><a href="#about">自己紹介</a></li>
             <li class="gnav-item"><a href="#contact">お問い合わせ</a></li>
           </ul>
         </nav>
@@ -40,131 +57,201 @@
     </header>
     <!-- /header -->
 
-    <main class="content">
+    <main class="content" id="main">
+      <div class="bg-image_box">
+        <div class="bg-image" style="background-image: url(img/bg.jpg); "></div>
+      </div>
 
       <!-- mv -->
       <div class="mv">
-        <div class="mv-bg-up" style="background-image: url(img/main_up.png);"></div>
-        <div class="mv-container">
-          <p class="mv-title">雑栗わかる</p>
-          <!-- <p class="mv-subtitle">PORTFOLIO</p> -->
-          <p class="mv-text">
-            世界の仕組みをざっくり解説しています。
+        <div class="mv-bg-up" >
+        <!-- <div class="mv-bg-up" style="background-image: url(img/bg.jpg);"> -->
+          <div class="globe_box1">
+            <div class="globe_box" id="globe_box">
+              <div class="world_box" id="world_box">
+                <div class="circle" ></div>
+                <div class="globe" id="globe" style="background-image: url(img/world.png);"></div> 
+              </div>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <div>
+                <img src="img/kumo1.svg"  width="200px">
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/kumo2.svg"  width="200px">
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/kumo3.svg"  width="200px">
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/kumo4.svg"  width="200px">
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/kumo5.svg"  width="200px">
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/kumo6.svg"  width="200px">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="mv-subtitle">  
+          <p id="mv-subtitle_p">
+            世界の仕組みをざっくり解説
           </p>
         </div>
-        <div class="mv-bg-down" style="background-image: url(img/main_down.png);"></div>
+        <div class="mv-container">
+          <div class="mv-title">
+            <div class="char1" id="char1">
+              <svg viewBox="0 -17 35 35">
+                <text class="background" x="0" y="50%">雑</text>
+                <text class="foreground" x="0" y="50%">雑</text>
+              </svg>
+            </div>
+            <div class="char2" id="char2">
+              <svg viewBox="0 -17 35 35">
+                <text class="background" x="0" y="50%">栗</text>
+                <text class="foreground" x="0" y="50%">栗</text>
+              </svg>
+            </div>
+            <div class="char3" id="char3">
+              <svg viewBox="0 -17 35 35">
+                <text class="background" x="0" y="50%">わ</text>
+                <text class="foreground" x="0" y="50%">わ</text>
+              </svg>
+            </div>
+            <div class="char4" id="char4">
+              <svg viewBox="0 -17 35 35">
+                <text class="background" x="0" y="50%">か</text>
+                <text class="foreground" x="0" y="50%">か</text>
+              </svg>
+            </div>
+            <div class="char5" id="char5">
+              <svg viewBox="0 -17 35 35">
+                <text class="background" x="0" y="50%">る</text>
+                <text class="foreground" x="0" y="50%">る</text>
+              </svg>
+            </div>
+            <!-- <div class="char3"><p>わ</p></div>
+            <div class="char4"><p>か</p></div>
+            <div class="char5"><p>る</p></div> -->
+            <!-- <svg viewBox="0 0 200 100">
+              <text class="background" x="0" y="50%">縁取り</text>
+              <text class="foreground" x="0" y="50%">縁取り</text>
+            </svg> -->
+          </div>
+            <!-- <p class="mv-subtitle">PORTFOLIO</p> -->
+            
+        </div>
+        <!-- <div class="fukidashi" >
+          <img src="img/fukidashi.svg">
+        </div> -->
       </div>
       <!-- /mv -->
 
       <!-- works -->
       <section class="works section" id="works">
         <div class="container">
-          <h2 class="title">活動一覧</h2>
-          <div class="works-list">
-            <a class="works-item" href="https://www.youtube.com/c/%E9%9B%91%E6%A0%97%E3%82%8F%E3%81%8B%E3%82%8B/">
-              <div class="works-img"><img src="img/sub1.png" alt="" /></div>
-              <p class="works-name">雑栗わかる Youtube</p>
-              <p class="works-info">「雑栗わかる」のYoutubeメインチャンネル。世界の仕組みをざっくり解説しています。</p>
-            </a>
-            <a class="works-item" href="https://www.youtube.com/channel/UCgDNK_xuC2sjTZGeGAAacdw/">
-              <div class="works-img"><img src="img/sub2.png" alt="" /></div>
-              <p class="works-name">雑栗カタル Youtube</p>
-              <p class="works-info">「雑栗わかる」のYoutubeサブチャンネル。雑栗わかるがざっくり語ります。</p>
-            </a>
-            <a class="works-item" href="https://www.youtube.com/channel/UCUeYppoJaCMSbSJn6t-9phg">
-              <div class="works-img"><img src="img/sub3.png" alt="" /></div>
-              <p class="works-name">ざっくりクエスト Youtube</p>
-              <p class="works-info">「雑栗わかる」のYoutubeサブチャンネル。雑栗わかるが車中泊で日本を旅しながら魔王を倒します。</p>
-            </a>
-            <a class="works-item" href="https://yoor.jp/door/zatsukuriwakaru?">
-              <div class="works-img"><img src="img/sub4.png" alt="" /></div>
-              <p class="works-name">オンラインサロン</p>
-              <p class="works-info">Youtubeでは削除されてしまう、サロン限定動画を配信したり、メンバーさん個人個人の自立を応援するサロンです。</p>
-            </a>
-            <a class="works-item" href="https://twitter.com/zatsukuriwakaru?s=09">
-              <div class="works-img"><img src="img/sub5.png" alt="" /></div>
-              <p class="works-name">雑栗わかる twitter</p>
-              <p class="works-info">「雑栗わかる」のTwitterアカウント。</p>
-            </a>
-          </div>
+          <h2 class="title">活動内容</h2>
+          <ul class="works-list">
+            <li class="works-item">
+              <a href="https://www.youtube.com/c/%E9%9B%91%E6%A0%97%E3%82%8F%E3%81%8B%E3%82%8B/">
+                <div class="works-card">
+                  <div class="works-img"><img src="img/sub1.png" alt="" /></div>
+                  
+                  <div class="works-info-box">
+                    <p class="works-name">Youtube</p>
+                    <div class="works-body">
+                      <p class="works-info">世界の仕組みをざっくり<br class="sp-only-b">わかりやすく解説しています</p>
+                      <div class="arrowBox">
+                        <div class="arrow_right"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a href="https://yoor.jp/door/zatsukuriwakaru?">
+                <div class="works-card">
+                  <div class="works-img"><img src="img/sub4.png" alt="" /></div>
+                  <div class="works-info-box">
+                    <p class="works-name">オンラインサロン</p>
+                    <div class="works-body">
+                      <p class="works-info">世界の闇に気付いた人の<br class="sp-only-b">次のステップを皆で模索しています。</p>
+                      <div class="arrowBox">
+                        <div class="arrow_right"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a href="https://twitter.com/zatsukuriwakaru">
+                <div class="works-card">
+                  <div class="works-img"><img src="img/sub5.png" alt="" /></div>
+                  <div class="works-info-box">
+                    <p class="works-name">Twitter</p>
+                    <div class="works-body">
+                      <p class="works-info">思い付きを結構本音で<br class="sp-only-b">つぶやいてます</p>
+                      <div class="arrowBox">
+                        <div class="arrow_right"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- /works -->
-
-      <!-- skill
-      <section class="skill section" id="skill">
-        <div class="container">
-          <h2 class="title">SKILL</h2>
-          <div class="skill-list">
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">HTML5/CSS3</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">WordPress</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">JavaScript</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">Photoshop</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">Illustrator</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">XD</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-       /skill -->
 
 
       <!-- about -->
       <section class="about section" id="about">
         <div class="container">
-          <h2 class="title">雑栗について</h2>
-          <div class="profile">
-            <p class="profile-img">
-              <img src="img/about.jpg" alt="">
-            </p>
-            <div class="profile-body">
-              <p>
-                雑栗とはこういう人物です。こういう活動をしています。こういう事を目指しています。雑栗とはこういう人物です。こういう活動をしています。こういう事を目指しています。
-              </p>
-              <p>
-                こういう事を目指しています。こういう事を目指しています。こういう事を目指しています。
-              </p>
+          <h2 class="title">自己紹介</h2>
+          <div class="profile-box">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="img/about.jpg" alt="">
+                <p class="profile-name">雑栗わかる</p>
+                <p class="profile-info">（Youtuber）</p>
+              </div>
+              <div class="profile-body">
+                <p>
+                  ざっくりわかる解説お兄さん、<br class="sp-only-b"><span class="large">雑栗わかる</span>です。<br>
+                  Youtubeで世界の仕組みをざっくりわかりやすく解説しています。
+                </p>
+                <p>
+                  <span class="large">34歳で脱サラ</span>し、現在は<span class="large">Youtube</span>と<span class="large">オンラインサロン</span>に夢中です。
+                </p>
+                <p>
+                  コロナをキッカケに<span class="large">「わかりにくいことをわかりやすくする」</span>ことに没頭しています。
+                </p>
+                <p>
+                  世界が急激なスピードで変化していくこのカオスな状況をわかりやすく説明する。<br>
+                  次の時代を楽しく生きるヒントをたくさんの人と共有する。<br>
+                  それが私の<span class="large">「遊び」</span>です。
+                </p>
+                <p>
+                  私の「遊び」を楽しいと感じてくださる方がいらっしゃいましたら、<span class="large">一緒に地球を遊びつくしましょう。</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -175,18 +262,20 @@
       <section class="contact section" id="contact">
         <div class="container">
           <h2 class="title">お問い合わせ</h2>
-          <p class="lead">
-            お仕事に関するお問い合わせは、<br class="sp-only">以下のお問い合わせフォームから<br class="sp-only-b">お願いいたします。
-          </p>
-          <div class="contact-list">
-            <div class="contact-box">
-              <!-- <a class="contact-item" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a> -->
-              <a href="https://form.run/@zatsukuri-form"><button class="contact-button"  >お問い合わせフォーム</button></a>
-            </div>  
+          <div class="contact-box1">
+            <p class="lead">
+              お仕事に関するお問い合わせは、<br class="sp-only">お問い合わせフォームから<br class="sp-only-b">お願いいたします。
+            </p>
+            <div class="contact-list">
+              <div class="contact-box">
+                <a href="https://form.run/@zatsukuri-form"><button class="contact-button"  >お問い合わせフォーム</button></a>
+              </div>  
+            </div>
           </div>
         </div>
       </section>
       <!-- /contact -->
+
       <div class="page-top" id="js-page-top">
         <span class="material-icons-outlined">expand_less</span>
       </div>
@@ -194,7 +283,7 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="copyright">&copy;雑栗わかる</div>
+      <div class="copyright">Copyright &copy; 2022 雑栗わかる</div>
     </footer>
     <!-- /footer -->
 
