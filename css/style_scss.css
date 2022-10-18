@@ -13,7 +13,6 @@ body {
 a {
   transition: opacity 0.3s;
   text-decoration: none;
-  color: #1ca9e3;
 }
 
 img {
@@ -273,17 +272,18 @@ img {
 メインビジュアル
 ---------------------------------*/
 .bg-image_box {
-  width: 100%;
+  width: calc(100% + 10px);
   height: 130vh;
   position: fixed;
   transform: translateY(calc(var(--ys) * -1 / 20));
+  margin: -5px;
 }
 
 .bg-image {
   width: 100%;
   height: 100%;
   background-position: center;
-  background-size: cover;
+  background-size: 120%;
   background-repeat: no-repeat;
   -moz-filter: blur(1px);
   -o-filter: blur(1px);
@@ -855,39 +855,96 @@ svg {
     right: 100vw;
   }
 }
-/*
-@keyframes rotation {
-    0% {
-        // opacity: 0;
-        transform: rotate(-2deg);
-    }
-    100% {
-        // opacity: 1;
-        transform: rotate(0deg);
-    }
+a.scrollArrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  transform: translate(-50%, 0);
+  text-decoration: none;
+  padding-top: 50px;
+  color: #333132;
+  font-family: "Montserrat";
+  font-weight: bold;
+  z-index: 1000;
+  opacity: 0;
+  transition: 1s;
+}
+a.scrollArrow span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 2px solid #333132;
+  border-bottom: 2px solid #333132;
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
 }
 
-@-webkit-keyframes horizontal1 {
-0% { -webkit-transform:translateX( -10px) ; }
-100% { -webkit-transform:translateX(  0px) ; }
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
 }
-
-@-webkit-keyframes horizontal2 {
-0% { -webkit-transform:translateX(  10px) ; }
-100% { -webkit-transform:translateX(  0px) ; }
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
 }
-
-@-webkit-keyframes vertical {
-0% { top: -5px; }
-100% { top: 5px; }
-}
-*/
 /*--------------------------------
 Works
 ---------------------------------*/
+/* フェードインアニメーション（全体） */
+.fade-in-bottom {
+  -webkit-animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.works .title {
+  opacity: 0;
+}
+
 .works-list {
   display: flex;
   margin: -20px;
+  opacity: 0;
 }
 
 .works-item {
@@ -900,7 +957,7 @@ Works
   height: 330px;
   margin: 20px;
   color: #333132;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02), 0 8px 36px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
   border-radius: 10px;
@@ -981,11 +1038,16 @@ Works
 /*--------------------------------
 About
 ---------------------------------*/
+.about .title {
+  opacity: 0;
+}
+
 .profile-box {
   padding: 50px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02), 0 8px 36px rgba(0, 0, 0, 0.08);
+  opacity: 0;
 }
 
 .profile {
@@ -1042,11 +1104,16 @@ Contact
   text-align: center;
 }
 
+.contact .title {
+  opacity: 0;
+}
+
 .contact-box1 {
   padding: 50px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02), 0 8px 36px rgba(0, 0, 0, 0.08);
+  opacity: 0;
 }
 
 .contact-item:not(:last-child) {
@@ -1382,7 +1449,7 @@ Contact
     margin-right: 20px;
   }
   .bg-image {
-    background-size: 130%;
+    background-size: 120%;
   }
   .mv-title p {
     font-size: 60px;
@@ -1509,7 +1576,7 @@ Contact
     margin-bottom: 50px;
   }
   .works-item a {
-    height: 380px;
+    height: 340px;
   }
   .works-info-box {
     height: auto;
