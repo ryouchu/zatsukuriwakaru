@@ -284,7 +284,7 @@ img {
   height: 100%;
   background-position: top;
   background-size: 120%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   -moz-filter: blur(1px);
   -o-filter: blur(1px);
   -ms-filter: blur(1px);
