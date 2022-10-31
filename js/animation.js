@@ -46,13 +46,22 @@ window.onload = function () {
     
 
 // パララックス（自作）
-scrollY();
-function scrollY(){
-  var ys = window.pageYOffset ;
-  // console.log(ys);
-  document.documentElement.style.setProperty('--ys', `${ys}px`);
-}
-window.addEventListener('scroll', scrollY );
+// scrollY();
+// function scrollY(){
+//   var ys = window.pageYOffset ;
+//   // console.log(ys);
+//   document.documentElement.style.setProperty('--ys', `${ys}px`);
+// }
+// window.addEventListener('scroll', scrollY );
+
+// パララックス(Rellax)
+const bg = new Rellax('.bg-image_box',{
+  speed: 10
+})
+
+const kumo = new Rellax('.mv-bg-up li',{
+  speed: 7
+})
 
 
 
@@ -76,10 +85,6 @@ var scrollBlur = function() {
   } else if ( ybss < 0) {
     ybss = 0;
   }
-  // console.log('console.log1 : ' + target_works.getBoundingClientRect().top + triggerMargin_ybs)
-  // console.log('console.log2 : ' + window.pageYOffset)
-  // console.log('console.log3 : ' + ybs)
-  // console.log('console.log4 : ' + target_works.getBoundingClientRect().top)
   if (window.innerHeight > target_works.getBoundingClientRect().top + triggerMargin_ybs){
     document.documentElement.style.setProperty('--ybs', `${ybs}px`);
     document.documentElement.style.setProperty('--ybss', `${ybss}px`);
