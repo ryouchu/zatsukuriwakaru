@@ -318,11 +318,8 @@ img {
 ---------------------------------*/
 .bg-image_box {
   width: calc(100% + 10px);
-  height: 130vh;
+  height: 300vh;
   position: fixed;
-  -webkit-transform: translateY(calc(var(--ys) * -1 / 20));
-      -ms-transform: translateY(calc(var(--ys) * -1 / 20));
-          transform: translateY(calc(var(--ys) * -1 / 20));
   margin: -5px;
 }
 
@@ -855,9 +852,6 @@ svg {
   height: 200px;
   width: 200px;
   display: inline-block;
-  -webkit-transform: translateY(calc(var(--ys) * -1 / 10));
-      -ms-transform: translateY(calc(var(--ys) * -1 / 10));
-          transform: translateY(calc(var(--ys) * -1 / 10));
 }
 .mv-bg-up li:nth-child(odd) div {
   -webkit-animation: horizontal1 1s ease-in-out infinite alternate;
