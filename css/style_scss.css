@@ -482,7 +482,7 @@ svg {
   stroke-linejoin: round;
 }
 
-.mv-subtitle p {
+.mv-subtitle h1 {
   font-family: Yasashisa;
   font-size: 35px;
   font-weight: normal;
@@ -535,7 +535,7 @@ svg {
           animation: jello-horizontal 2s 2.9s both;
 }
 
-.mv-subtitle p.title-anim {
+.mv-subtitle h1.title-anim {
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: flowing-anim 1s 2.6s forwards ease-out;
@@ -1504,7 +1504,7 @@ Contact
   .mv-subtitle {
     top: calc(50% - 95px);
   }
-  .mv-subtitle p.title-anim {
+  .mv-subtitle h1.title-anim {
     font-size: 25px;
   }
   /* Works */
@@ -1591,7 +1591,7 @@ Contact
   .mv-subtitle {
     top: calc(50% - 70px);
   }
-  .mv-subtitle p.title-anim {
+  .mv-subtitle h1.title-anim {
     font-size: 20px;
   }
   svg {
@@ -1673,7 +1673,7 @@ Contact
   .mv-subtitle {
     top: calc(50% - 70px);
   }
-  .mv-subtitle p.title-anim {
+  .mv-subtitle h1.title-anim {
     font-size: 20px;
   }
   svg {
